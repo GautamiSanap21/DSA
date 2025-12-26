@@ -1,0 +1,17 @@
+package com.demo.array;
+
+public class OneDArray {
+	int arr[];
+
+	public OneDArray(int[] arr) {
+		this.arr = arr;
+	}
+	
+	public void addition(int arr) {
+		int sum = 0;
+		for (int i = 0; i < this.arr.length; i++) {
+			
+		}
+	}
+	
+}

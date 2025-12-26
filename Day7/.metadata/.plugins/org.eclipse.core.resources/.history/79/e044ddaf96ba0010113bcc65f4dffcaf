@@ -1,0 +1,16 @@
+package com.demo.test;
+
+import com.demo.list.DoublyLinkedList;
+
+public class TestDoublyLinkedList {
+
+	public static void main(String[] args) {
+		DoublyLinkedList dll = new DoublyLinkedList();
+		dll.addAtEnd(12);
+		dll.addAtEnd(15);
+		dll.addAtEnd(9);
+		dll.displayData();
+
+	}
+
+}

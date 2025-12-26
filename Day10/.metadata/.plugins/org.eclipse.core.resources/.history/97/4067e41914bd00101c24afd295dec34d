@@ -1,0 +1,13 @@
+package com.demo.tree;
+
+public class BinarySearchTree {
+	Node root;
+	
+	class Node{
+		int data;
+		Node left;
+		Node right;
+		
+		
+	}
+}

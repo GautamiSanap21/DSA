@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="com.demo.queue.QueueUsingArray"/>
+    <fullyQualifiedTypeName name="com.demo.queue.QueueUsingLinkedList.Node"/>
+    <fullyQualifiedTypeName name="com.demo.queue.QueueUsingLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.circularQueue.CircularQueueUsingArray"/>
+    <fullyQualifiedTypeName name="com.demo.linkedList.CircularSinglyLL"/>
+    <fullyQualifiedTypeName name="com.demo.linkedList.CircularSinglyLL.Node"/>
+    <fullyQualifiedTypeName name="com.demo.tree.BinarySearchTree.Node"/>
+    <fullyQualifiedTypeName name="com.demo.tree.BinarySearchTree"/>
+    <fullyQualifiedTypeName name="com.demo.linkedList.SinglyLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.linkedList.SinglyLinkedList.Node"/>
+    <fullyQualifiedTypeName name="com.demo.linkedList.DoublyLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.linkedList.DoublyLinkedList.Node"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.demo.stack.StackUsingArray"/>
+    <fullyQualifiedTypeName name="com.demo.stack.StackUsingLinkedList.Node"/>
+    <fullyQualifiedTypeName name="com.demo.stack.StackUsingLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.queue.QueueUsingLinkedList.Node"/>
+    <fullyQualifiedTypeName name="com.demo.queue.QueueUsingLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.list.DoublyCircularLinkedList"/>
+</qualifiedTypeNameHistroy>

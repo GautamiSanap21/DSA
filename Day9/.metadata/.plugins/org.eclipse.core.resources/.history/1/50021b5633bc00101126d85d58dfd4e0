@@ -1,0 +1,44 @@
+package com.demo.list;
+
+public class DoublyCircularLinkedList {
+	Node head;
+	class Node{
+		int data;
+		Node prev,next;
+		
+		public Node(int data) {
+			this.data = data;
+			this.prev = null;
+			this.next = null;
+		}
+	}
+	public DoublyCircularLinkedList() {
+		head = null;
+	}
+	
+	
+	public void addAtEnd(int data) {
+		Node newnode = new Node(data);
+		if(head == null) {
+			head = newnode;
+			head.prev = head;
+			head.next = head;
+		}else {
+			Node temp = head.prev;
+			newnode.next = head;
+			newnode.prev = temp;
+			temp.next = newnode;
+			head.prev = newnode;
+		}
+	}
+	
+	public void displayData() {
+		Node temp = head;
+		do {
+			System.out.println(temp.data+"---->");
+			temp = temp.next;
+		}while(temp != head.prev);
+		System.out.println();
+	}
+	
+}

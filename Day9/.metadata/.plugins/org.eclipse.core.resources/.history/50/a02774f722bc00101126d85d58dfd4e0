@@ -1,0 +1,13 @@
+package com.demo.test;
+
+import com.demo.stack.StackUsingArray;
+
+public class TestStackArray {
+
+	public static void main(String[] args) {
+		StackUsingArray mystack = new StackUsingArray(5);
+		mystack.push(12);
+
+	}
+
+}

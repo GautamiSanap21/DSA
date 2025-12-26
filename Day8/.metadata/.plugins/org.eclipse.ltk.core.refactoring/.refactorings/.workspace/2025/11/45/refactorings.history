@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CircularDoublyLinkedList&apos; to &apos;CircularSinglyLinkedList&apos;" description="Rename resource &apos;CircularDoublyLinkedList&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/CircularDoublyLinkedList" name="CircularSinglyLinkedList" stamp="1762550489957" updateReferences="true"/>
+</session>

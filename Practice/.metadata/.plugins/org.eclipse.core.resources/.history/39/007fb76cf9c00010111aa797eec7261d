@@ -1,0 +1,58 @@
+package com.demo.queue;
+
+public class QueueUsingArray {
+	int arr[];
+	int front;
+	int rear;
+
+	public QueueUsingArray() {
+		arr = new int[10];
+		front = 0;
+		rear = 0;
+	}
+
+	public QueueUsingArray(int size) {
+		arr = new int[size];
+		front = 0;
+		rear = 0;
+	}
+	
+	public boolean isEmpty() {
+		if (front == 0 && rear == 0) {
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean isFull() {
+		if (rear == arr.length) {
+			return true;
+		}
+		return false;
+	}
+	
+	public void enQueue(int val) {
+		if (!isFull()) {
+			arr[rear] = val;
+			rear++;
+			System.out.println("Element added");
+		}else {
+			System.out.println("Queue is Full...");
+		}
+	}
+	
+	public void deQueue() {
+		if (!isEmpty()) {
+			front++;
+			System.out.println("Element removed");
+		}
+		else {
+			System.out.println("Queue is Empty...");
+		}
+	}
+	
+	public void displayData() {
+		
+	}
+	
+}

@@ -1,0 +1,43 @@
+package com.demo.stack;
+
+public class StackUsingLinkedList {
+	Node top;
+	
+	class Node{
+		int data;
+		Node next;
+		
+		public Node(int data){
+			this.data = data;
+			this.next = null;
+		}
+	}
+
+	public StackUsingLinkedList() {
+		top = null;
+	}
+	
+	
+	public void push(int data) {
+		Node newnode = new Node(data);
+		if (!isempty()) {
+			newnode.next = top;
+		}
+		top = newnode;
+		System.out.println("Pushed "+data);
+	}
+	
+	public void pop() {
+		Node temp = top;
+		top = top.next;
+		temp.next = null;
+		
+	}
+
+
+	private boolean isempty() {
+		return top == null;
+	}
+	
+	
+}

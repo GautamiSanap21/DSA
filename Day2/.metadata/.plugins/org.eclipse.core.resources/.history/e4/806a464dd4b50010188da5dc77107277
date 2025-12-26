@@ -1,0 +1,17 @@
+package com.demo.test;
+
+import com.demo.search.Sequential;
+
+public class TestSequentialSearch {
+
+	public static void main(String[] args) {
+		int arr[] = {5,32,67,1,8,4521,12};
+		Sequential s = new Sequential();
+		int position = s.sequentialSearch(arr, 1);
+		if(position>=0) {
+			
+		}
+
+	}
+
+}

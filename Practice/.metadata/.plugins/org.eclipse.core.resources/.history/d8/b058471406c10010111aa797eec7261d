@@ -1,0 +1,14 @@
+package com.demo.test;
+
+import com.demo.circularQueue.CircularQueueUsingArray;
+
+public class TestCircularArrayQueue {
+
+	public static void main(String[] args) {
+		CircularQueueUsingArray q = new CircularQueueUsingArray(5);
+		q.displayData();
+		q.enQueue(100);
+		q.displayData();
+	}
+
+}

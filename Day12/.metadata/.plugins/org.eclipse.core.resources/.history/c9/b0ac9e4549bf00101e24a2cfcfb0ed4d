@@ -1,0 +1,10 @@
+package com.demo.stacks;
+
+public class MyQueueList {
+
+	public void enQueue(int start) {
+		
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.demo.queue;
+
+public class QueueUsingLinkedList {
+	Node front;
+	Node rear;
+	
+	class Node{
+		
+	}
+}

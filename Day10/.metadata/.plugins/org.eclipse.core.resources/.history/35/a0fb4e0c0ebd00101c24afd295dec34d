@@ -1,0 +1,8 @@
+package com.demo.queue;
+
+public class CircularQueue {
+	int arr[];
+	int front;
+	int rear;
+	
+}

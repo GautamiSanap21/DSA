@@ -1,0 +1,19 @@
+package com.demo.queue;
+
+public class QueueUsingLinkedList {
+
+	Node front;
+	class Node{
+		int data;
+		Node rear;
+		
+		public Node(int data) {
+			this.data = data;
+		}
+	}
+	public QueueUsingLinkedList() {
+		front = null;
+	}
+	
+	
+}

@@ -1,0 +1,28 @@
+package com.demo.test;
+
+import com.demo.linkedList.SinglyLinkedList;
+
+public class TestSinglyLinkedList {
+
+	public static void main(String[] args) {
+		SinglyLinkedList sll = new SinglyLinkedList();
+		sll.addNode(100);
+		sll.addNode(50);
+		sll.addNode(70);
+		sll.addNode(30);
+		sll.addNode(90);
+		sll.displayData();
+//		sll.deleteByValue(100);
+//		sll.deleteByValue(50);
+		sll.deleteByValue(90);
+		sll.displayData();
+		sll.addByPosition(3, 658);
+		sll.displayData();
+		sll.addByValue(30, 1000);
+		sll.displayData();
+		sll.deleteByPosition(6);
+		sll.displayData();
+
+	}
+
+}

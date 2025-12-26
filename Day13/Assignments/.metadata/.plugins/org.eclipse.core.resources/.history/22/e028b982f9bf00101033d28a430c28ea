@@ -1,0 +1,86 @@
+package com.demo.list;
+
+public class SinglyLinkedList {
+	Node head;
+
+	class Node {
+		int data;
+		Node next;
+
+		public Node(int data) {
+			super();
+			this.data = data;
+		}
+
+	}
+
+	public SinglyLinkedList() {
+		this.head = null;
+	}
+
+	public void addNode(int data) {
+		Node newnode = new Node(data);
+		if (head == null) {
+			head = newnode;
+		} else {
+			Node temp = head;
+			while (temp.next != null) {
+				temp = temp.next;
+			}
+
+			if (temp != null) {
+				temp.next = newnode;
+				newnode.next = null;
+			}
+		}
+	}
+
+	public void displayData() {
+		if (head == null) {
+			System.out.println("List is Empty...");
+		} else {
+			Node temp = head;
+			System.out.print(temp.data + "--->");
+			while (temp.next != null) {
+				temp = temp.next;
+				System.out.print(temp.data + "--->");
+			}
+			System.out.print("null");
+
+		}
+	}
+
+//	public void reverseSinglyLinkedList() {
+//		
+//		
+//		Node temp = head;
+//		
+//		while(temp.next!=null) {
+//			temp = temp.next;
+//		}
+//	}
+
+	public void removePrime() {
+		if (head == null) {
+			System.out.println("List is Empty...");
+		} else {
+			Node temp = head;
+			Node newtemp = null;
+			while (temp.next != null) {
+				newtemp = temp;
+//				temp = temp.next;
+				int num = temp.data;
+				for (int i = 2; i < num; i++) {
+					if (num % i != 0) {
+						newtemp.next = temp.next;
+						temp.next = null;
+					}
+				}
+				temp = temp.next;
+
+			}
+			
+
+		}
+	}
+}

@@ -1,0 +1,21 @@
+package com.demo.stack;
+
+public class StackUsingArray {
+	private int arr[];
+	private int top;
+	
+	
+	public StackUsingArray() {
+		arr = new int[10];
+		top = -1;
+	}
+
+
+	public StackUsingArray(int size) {
+		arr = new int[size];
+		top = -1;
+	}
+	
+	
+	
+}

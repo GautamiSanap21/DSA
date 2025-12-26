@@ -1,0 +1,12 @@
+package com.demo.test;
+
+import com.demo.linkedList.SinglyLinkedList;
+
+public class TestSinglyLinkedList {
+
+	public static void main(String[] args) {
+		SinglyLinkedList sll = new SinglyLinkedList();
+		sll.addNode(100);
+	}
+
+}

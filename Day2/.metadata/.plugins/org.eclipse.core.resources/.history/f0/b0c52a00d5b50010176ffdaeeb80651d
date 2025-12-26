@@ -1,0 +1,12 @@
+package com.demo.search;
+
+public class BinaryWithoutRecursion {
+
+	public int BinarySearchWithoutRecursion(int arr[], int search) {
+		int low = 0;
+		int high = arr.length-1;
+		int mid = (low+high)/2;
+		return search;
+
+	}
+}

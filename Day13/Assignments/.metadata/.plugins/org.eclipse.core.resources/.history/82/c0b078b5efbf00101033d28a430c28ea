@@ -1,0 +1,18 @@
+package com.demo.array;
+
+public class OneDArray {
+	int arr[];
+
+	
+	
+	public OneDArray() {
+		arr = new int[10];
+	}
+
+
+
+	public OneDArray(int[] arr) {
+		super();
+		this.arr = arr;
+	}
+}

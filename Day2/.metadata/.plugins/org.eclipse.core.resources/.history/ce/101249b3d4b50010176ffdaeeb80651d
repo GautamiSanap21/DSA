@@ -1,0 +1,6 @@
+package com.demo.search;
+
+public class BinaryWithoutRecursion {
+
+	public int BinarySearchWithoutRecursion(int arr[], int search) {
+}

@@ -1,0 +1,99 @@
+package com.demo.circularQueue;
+
+public class CircularQueueUsingArray {
+	int arr[];
+	int front;
+	int rear;
+
+	public CircularQueueUsingArray() {
+		arr = new int[10];
+		front = -1;
+		rear = -1;
+	}
+
+	public CircularQueueUsingArray(int size) {
+		arr = new int[size];
+		front = -1;
+		rear = -1;
+	}
+
+	public boolean isEmpty() {
+		if (front == -1) {
+			return true;
+		}
+		return false;
+	}
+
+	public boolean isFull() {
+//		return (rear + 1) % arr.length == front;
+		if (front==0 && rear == arr.length-1) {
+			return true;
+		}
+		else if ((rear + 1) % arr.length == front) {
+			return true;
+		}
+			return false;
+		
+//		if (front==0 && rear == arr.length-1) {
+//			System.out.println("Queue is full...");
+//			return true;
+//		}else if(front==rear+1) {
+//			System.out.println("Queue is full...");
+//			return true;
+//		}
+//		return false;
+	}
+
+	public void enQueue(int val) {
+		if (!isFull()) {
+			if (front == -1) {
+				front = 0;
+				arr[front] = val;
+				System.out.println(val + " added");
+			} else {
+				rear = (rear + 1) % arr.length;
+				arr[rear] = val;
+				System.out.println(val + " added");
+			}
+		} else {
+			System.out.println("Queue is full...");
+		}
+	}
+
+	public void deQueue() {
+		if (!isEmpty()) {
+			if (front == rear) {
+				front = -1;
+				rear = -1;
+			} else {
+				front = (front + 1) % arr.length;
+			}
+		} else {
+			System.out.println("Queue is empty...");
+		}
+	}
+
+	public void displayData() {
+		if (front == -1) {
+			System.out.println("Queue is Empty...");
+		} else {
+			
+			int i = front;
+			System.out.println(arr[i]);
+			while (i!=rear) {
+				i++;
+				if (i==rear+1) {
+					break;
+				}else {
+				System.out.println(arr[i]);
+			}
+			
+			
+			
+//			for ( int i = front; i <= rear; i++) {
+//				System.out.println(arr[i]);
+//			}
+		}
+	}
+
+}

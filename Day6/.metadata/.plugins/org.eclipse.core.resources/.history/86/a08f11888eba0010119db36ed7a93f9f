@@ -1,0 +1,22 @@
+package com.demo.test;
+
+import com.demo.linkedList.SinglyLinkedList;
+
+public class TestSinglyLinkedList {
+
+	public static void main(String[] args) {
+		SinglyLinkedList list = new SinglyLinkedList();
+		list.addAtEnd(10);
+		list.addAtEnd(20);
+		list.addAtEnd(30);
+		list.addAtEnd(40);
+		list.displayData();
+		list.addByNum(100, 20);
+		list.displayData();
+		list.addByPosition(3, 300);
+		list.displayData();
+//		list.deleteByPosition(3);
+		list.displayData();
+	}
+
+}

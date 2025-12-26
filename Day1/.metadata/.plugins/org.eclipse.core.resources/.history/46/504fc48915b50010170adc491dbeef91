@@ -1,0 +1,33 @@
+package com.demo.test;
+import com.demo.array.MyArray;
+
+public class TestArray {
+
+	public static void main(String[] args) {
+		MyArray ma1 = new MyArray();
+		System.out.println("Capacity: "+ma1.getCapacity());
+		System.out.println("Size: "+ma1.getSize());
+		
+		MyArray ma2 = new MyArray(20);
+		System.out.println("Capacity: "+ma2.getCapacity());
+		System.out.println("Size: "+ma2.getSize());
+		
+		
+		int arr[] = new int[20];// {11,12,13,14,15,16};
+		arr[0] = 23;
+		arr[1] = 27;
+		arr[2] = 24;
+		arr[3] = 25;
+		arr[4] = 26;
+		
+		
+		MyArray ma3 = new MyArray(arr);
+		System.out.println("Capacity: "+ma3.getCapacity());
+		System.out.println("Size: "+ma3.getSize());
+		
+		MyArray ma4 = new MyArray();
+		ma4.add(34);
+		ma4.display();
+	}
+
+}

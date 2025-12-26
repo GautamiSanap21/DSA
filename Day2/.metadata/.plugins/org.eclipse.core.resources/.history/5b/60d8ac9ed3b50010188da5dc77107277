@@ -1,0 +1,10 @@
+package com.demo.search;
+
+public class Sequential{
+	int arr[];
+	
+	public int sequentialSearch(int arr[]) {
+		this.arr = arr;
+		return 0;	
+	}
+}

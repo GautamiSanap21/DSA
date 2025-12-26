@@ -1,0 +1,6 @@
+package com.demo.search;
+
+public class Sequential {
+	int arr[];
+	
+}

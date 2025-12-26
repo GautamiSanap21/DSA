@@ -1,0 +1,103 @@
+package com.demo.array;
+
+public class MyArray {
+	private int arr[];
+	private int count;
+
+	// default constructor
+	public MyArray() {
+		arr = new int[10];
+		count = 0;
+	}
+
+//	parameterized constructor with size attribute
+	public MyArray(int size) {
+		arr = new int[size];
+		count = 0;
+	}
+
+	
+	public MyArray(int argarr[]) {
+		this.arr = argarr;
+		for (int i : arr) {
+			if (i!=0) {
+				count++;
+				this.count = count;
+			}
+		}
+	}
+
+	public int getCapacity() {
+		return arr.length;
+	}
+
+	public int getSize() {
+		return count;
+	}
+
+	public void display() {
+		for (int i = 0; i < count; i++) {
+			System.out.println(arr[i]);
+		}
+		
+	}
+
+	// add element at the end
+	public boolean addAtEnd(int num) {
+		if (count < arr.length) {
+			arr[count] = num;
+			count++;
+			return true;
+		}
+		return false;
+
+	}
+	
+	public boolean addAtGivenPosition(int pos, int value) {
+		if (count < arr.length) {
+			for (int i = count; i > pos; i--) {
+				arr[i] = arr[i-1];
+			}
+			arr[pos] = value;
+			count++;
+			return true;
+		}
+		return false;
+		
+	}
+	
+	
+	public boolean deleteByPosition(int pos) {
+		if (pos < count) {
+			for (int i = pos; i < count-1; i++) {
+				arr[i] = arr[i+1];
+			}
+			count--;
+			return true;
+		}
+		return false;
+		
+	}
+	
+	public int searchByValue(int value) {
+		for (int i = 0; i < count; i++) {
+			if (arr[i]==value) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	
+	public boolean deleteFirstOccur(int value) {
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i]==value){
+				int val = searchByValue(i);
+				return deleteByPosition(val);
+
+				
+			}
+		}
+		return true;
+	}
+
+}

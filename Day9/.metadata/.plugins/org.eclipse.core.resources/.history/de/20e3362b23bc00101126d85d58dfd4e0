@@ -1,0 +1,26 @@
+package com.demo.test;
+
+import com.demo.stack.StackUsingArray;
+
+public class TestStackArray {
+
+	public static void main(String[] args) {
+		StackUsingArray mystack = new StackUsingArray(5);
+		mystack.push(11);
+		mystack.push(12);
+		mystack.push(13);
+		mystack.push(14);
+		mystack.push(15);
+		mystack.push(16);
+		mystack.push(17);
+		mystack.pop();
+		mystack.pop();
+		mystack.pop();
+		mystack.pop();
+		mystack.pop();
+		mystack.pop();
+		
+
+	}
+
+}

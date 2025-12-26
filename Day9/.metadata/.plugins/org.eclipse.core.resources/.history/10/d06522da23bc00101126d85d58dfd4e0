@@ -1,0 +1,9 @@
+package com.demo.stack;
+
+public class StackUsingLinkedList {
+	Node head;
+	
+	class Node{
+		
+	}
+}

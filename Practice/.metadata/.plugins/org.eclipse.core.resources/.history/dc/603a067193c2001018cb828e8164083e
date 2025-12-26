@@ -1,0 +1,20 @@
+package com.demo.test;
+
+import com.demo.linkedList.DoublyLinkedList;
+
+public class TestDoublyLinkedList {
+
+	public static void main(String[] args) {
+		DoublyLinkedList dll = new DoublyLinkedList();
+		dll.addNode(1000);
+		dll.addNode(2000);
+		dll.addNode(3000);
+		dll.addNode(4000);
+		dll.addNode(5000);
+		dll.displayData();
+		dll.addByValue(1000,10);
+		dll.displayData();
+
+	}
+
+}

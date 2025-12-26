@@ -1,0 +1,27 @@
+package com.demo.test;
+
+import com.demo.search.BinaryWithoutRecursion;
+import com.demo.search.Sequential;
+
+public class TestSearchingTechniques {
+
+	public static void main(String[] args) {
+		int arr[] = {5,32,67,1,8,45,21,12};
+		Sequential s = new Sequential();
+		int position = s.sequentialSearch(arr, 122);
+		if(position>=0) {
+			System.out.println("Position of searchKey is: "+position);
+		}else {
+			System.out.println("Not Found");
+		}
+		
+		BinaryWithoutRecursion b = new BinaryWithoutRecursion();
+		int pos = b.BinarySearchWithoutRecursion(arr, 21);
+		if(pos>=0) {
+			System.out.println("Position of searchKey is: "+position);
+		}else {
+			System.out.println("Not Found");
+		}
+	}
+
+}

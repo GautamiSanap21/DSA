@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;OneDArray&apos; to &apos;Arrays&apos;" description="Rename resource &apos;OneDArray&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/OneDArray" name="Arrays" stamp="1762969455216" updateReferences="true"/>
+</session>

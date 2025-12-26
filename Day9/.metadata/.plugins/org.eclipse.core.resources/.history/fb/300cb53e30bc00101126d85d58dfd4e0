@@ -1,0 +1,12 @@
+package com.demo.test;
+
+import com.demo.queue.QueueUsingLinkedList;
+
+public class TestQueueLinkedList {
+
+	public static void main(String[] args) {
+		QueueUsingLinkedList q = new QueueUsingLinkedList();
+
+	}
+
+}

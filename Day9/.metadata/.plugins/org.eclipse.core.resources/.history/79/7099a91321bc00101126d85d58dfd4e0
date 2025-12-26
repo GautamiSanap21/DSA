@@ -1,0 +1,9 @@
+package com.demo.stack;
+
+public class StackUsingArray {
+	private int arr[];
+	private int top;
+	
+	
+	
+}

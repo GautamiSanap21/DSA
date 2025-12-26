@@ -1,0 +1,23 @@
+package com.demo.test;
+
+import java.util.Arrays;
+
+import com.demo.sort.CountingSort;
+import com.demo.sort.MergeSort;
+import com.demo.sort.SelectionSort;
+
+public class TestSort {
+
+	public static void main(String[] args) {
+		int arr[] = {45,1,34,2,78,9,5};
+		int arr1[] = {1,2,3,2,5,7,6,3,3,2};
+//		SelectionSort.selectionSort(arr);
+		System.out.println("========================================================");
+		MergeSort.mergeSort(arr, 0, arr.length-1);
+		System.out.println("========================================================");
+		int[] output = CountingSort.countingSort(arr1);
+		System.out.println("Sorted data");
+		System.out.println(Arrays.toString(output));
+	}
+
+}

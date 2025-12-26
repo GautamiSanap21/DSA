@@ -1,0 +1,13 @@
+package com.demo.test;
+
+import com.demo.stack.StackUsingLinkedList;
+
+public class TestStackLinkedList {
+
+	public static void main(String[] args) {
+		StackUsingLinkedList sll = new StackUsingLinkedList();
+		sll.push(11);
+
+	}
+
+}

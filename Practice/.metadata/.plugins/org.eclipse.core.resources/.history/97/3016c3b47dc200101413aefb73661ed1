@@ -1,0 +1,107 @@
+package com.demo.linkedList;
+
+import java.util.Iterator;
+
+public class SinglyLinkedList {
+	Node head;
+
+	class Node {
+		int data;
+		Node next;
+
+		public Node(int data) {
+			this.data = data;
+			next = null;
+		}
+	}
+
+	public SinglyLinkedList() {
+		head = null;
+
+	}
+
+	public void addNode(int data) {
+		Node newnode = new Node(data);
+		if (head == null) {
+			head = newnode;
+		} else {
+			Node temp = head;
+			while (temp.next != null) {
+				temp = temp.next;
+			}
+			temp.next = newnode;
+			newnode.next = null;
+		}
+	}
+
+	public void deleteByValue(int val) {
+		if (!isEmpty()) {
+			if (head.data == val) {
+				head = head.next;
+				return;
+			}else {
+				
+				Node temp = head;
+				Node prevTemp = null;
+				while (temp.next != null && temp.data != val) {
+					prevTemp = temp;
+					temp = temp.next;
+				}
+				if (temp.data == val) {
+					prevTemp.next = temp.next;
+					temp.next = null;
+				} else {
+					System.out.println("Value not found");
+				}
+			}
+		} else {
+			System.out.println("List is Empty");
+		}
+	}
+	
+	
+	
+	public void addBeforeValue(int val, int data){
+		
+	}
+	
+	public void addByPosition(int pos, int data) {
+		Node newnode = new Node(data);
+		if (pos==1) {
+			newnode.next = head.next;
+			head.next = newnode;
+		}else {
+			Node temp = head;
+			for (int i = 1; i <= pos-2; i++) {
+				temp = temp.next;
+			}
+			newnode.next = temp.next;
+			temp.next = newnode;
+		}
+	}
+	
+	
+
+	public boolean isEmpty() {
+		if (head == null) {
+			return true;
+		}
+		return false;
+
+	}
+
+	public void displayData() {
+		if (head == null) {
+			System.out.println("List is Empty");
+		} else {
+			Node temp = head;
+			System.out.print(temp.data + "--->");
+			while (temp.next != null) {
+				temp = temp.next;
+				System.out.print(temp.data + "--->");
+			}
+			System.out.println("null");
+		}
+	}
+
+}

@@ -1,0 +1,40 @@
+package com.demo.sorting;
+
+import java.util.Arrays;
+
+public class BubbleSortTechnique {
+
+	public void BubbleSort(int arr[]) {
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 1; j < arr.length - i; j++) {
+				// sort array in descending order
+//				if (arr[j-1]>arr[j]) {
+				// sort array in ascending order
+				if (arr[j - 1] > arr[j]) {
+					int temp = arr[j - 1];
+					arr[j - 1] = arr[j];
+					arr[j] = temp;
+				}
+			}
+			System.out.println("Iteration " + (i + 1));
+			System.out.println(Arrays.toString(arr));
+		}
+
+	}
+
+	public void ImprovedBubbleSort(int arr[]) {
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 1; j < arr.length - i; j++) {
+				// sort array in ascending order
+				if (arr[j - 1] > arr[j]) {
+					int temp = arr[j - 1];
+					arr[j - 1] = arr[j];
+					arr[j] = temp;
+				}
+			}
+			System.out.println("Iteration " + (i + 1));
+			System.out.println(Arrays.toString(arr));
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.demo.test;
+
+import com.demo.queue.QueueUsingArray;
+
+public class TestArrayQueue {
+
+	public static void main(String[] args) {
+		QueueUsingArray q = new QueueUsingArray(5);
+		q.deQueue();
+		q.enQueue(10);
+		q.enQueue(20);
+		q.enQueue(30);
+		q.enQueue(40);
+		q.enQueue(50);
+		q.enQueue(60);//q is full
+		q.enQueue(70);//q is full
+		q.enQueue(80);//q is full
+		q.displayData();
+		q.deQueue();
+		q.deQueue();
+		q.deQueue();
+		q.displayData();
+	}
+
+}

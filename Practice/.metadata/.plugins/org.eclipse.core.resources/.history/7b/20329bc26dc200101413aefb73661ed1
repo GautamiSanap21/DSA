@@ -1,0 +1,12 @@
+package com.demo.test;
+
+import com.demo.tree.BinarySearchTree;
+
+public class TestBST {
+
+	public static void main(String[] args) {
+		BinarySearchTree bst = new BinarySearchTree();
+		bst.inserNode(50);
+	}
+
+}

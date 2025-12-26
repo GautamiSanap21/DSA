@@ -1,0 +1,42 @@
+package com.demo.queue;
+
+public class QueueUsingLinkedList {
+
+	Node front;
+	class Node{
+		int data;
+		Node next;
+		Node rear;
+		
+		
+		public Node(int data) {
+			this.data = data;
+		}
+	}
+	public QueueUsingLinkedList() {
+		front = null;
+	}
+	
+	
+	public boolean isEmpty() {
+		if (front==null) {
+			return true;	
+		}
+		return false;
+	}
+	
+	
+	public void enQueue(int data) {
+		Node newnode = new Node(data);
+		if (isEmpty()) {
+			front=newnode;
+			newnode.next = null;
+		}else {
+			Node rear = front;
+			while (rear.next!=null) {
+				rear = rear.next;
+				
+			}
+		}
+	}
+}

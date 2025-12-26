@@ -1,0 +1,23 @@
+package com.demo.test;
+
+import com.demo.tree.BinarySearchTree;
+
+public class TestBinarySearchTree {
+	public static void main(String[] args) {
+		BinarySearchTree bst = new BinarySearchTree();
+		bst.insertNode(55);
+		bst.insertNode(10);
+		bst.insertNode(40);
+		bst.insertNode(34);
+		bst.insertNode(98);
+		bst.insertNode(62);
+		bst.insertNode(53);
+		bst.insertNode(87);
+		bst.insertNode(1);
+		bst.preorder();
+		bst.inorder();
+		bst.postorder();
+
+	}
+
+}

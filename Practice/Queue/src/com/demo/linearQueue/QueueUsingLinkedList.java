@@ -1,0 +1,67 @@
+package com.demo.linearQueue;
+
+public class QueueUsingLinkedList {
+
+	Node front;
+	class Node{
+		int data;
+		Node next;
+		Node rear;
+		
+		
+		public Node(int data) {
+			this.data = data;
+		}
+	}
+	public QueueUsingLinkedList() {
+		front = null;
+	}
+	
+	
+	public boolean isEmpty() {
+		if (front==null) {
+			return true;	
+		}
+		return false;
+	}
+	
+	
+	public void enQueue(int data) {
+		Node newnode = new Node(data);
+		if (isEmpty()) {
+			front=newnode;
+			newnode.next = null;
+		}else {
+			Node rear = front;
+			while (rear.next!=null) {
+				rear = rear.next;
+			}
+			rear.next = newnode;
+			newnode.next=null;
+		}
+	}
+	
+	public void deQueue() {
+		if (front==null) {
+			System.out.println("Queue is Empty...");	
+		}else {
+			Node temp = front;
+			front=temp.next;
+			temp.next=null;
+		}
+	}
+	
+	public void displayData() {
+		if (front==null) {
+			System.out.println("Queue is Empty...");	
+		}else {
+			Node rear = front;
+			System.out.print(rear.data+"--->");
+			while (rear.next!=null) {
+				rear = rear.next;
+				System.out.print(rear.data+"--->");
+			}
+			System.out.println("null");
+		}
+	}
+}

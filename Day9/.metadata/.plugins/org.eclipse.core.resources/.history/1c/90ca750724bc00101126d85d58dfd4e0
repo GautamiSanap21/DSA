@@ -1,0 +1,14 @@
+package com.demo.stack;
+
+public class StackUsingLinkedList {
+	Node top;
+	
+	class Node{
+		int data;
+		Node next;
+		
+		public Node(){
+			
+		}
+	}
+}

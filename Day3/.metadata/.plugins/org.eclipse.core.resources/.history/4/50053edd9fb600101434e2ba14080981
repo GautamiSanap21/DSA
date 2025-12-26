@@ -1,0 +1,16 @@
+package com.demo.test;
+import java.util.Iterator;
+
+import com.demo.sorting.BubbleSortTechnique;
+
+public class TestBubbleSort {
+
+	public static void main(String[] args) {
+		BubbleSortTechnique b1 = new BubbleSortTechnique();
+		int arr[] = {23,34,1,7,45,7,56,9};
+		b1.BubbleSort(arr);
+		
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.demo.test;
+
+import com.demo.list.SinglyCircularLinkedList;
+
+public class TestSinglyCircularLinkedList {
+
+	public static void main(String[] args) {
+		SinglyCircularLinkedList scll = new SinglyCircularLinkedList();
+		scll.addNode(10);
+		scll.addNode(20);
+		scll.addNode(30);
+		scll.addNode(40);
+		scll.displayData();
+		scll.addByPosition(1, 15);
+		scll.addByPosition(3, 15);
+		scll.addByPosition(7, 15);
+		scll.displayData();
+	}
+
+}

@@ -1,0 +1,63 @@
+package com.demo.test;
+import com.demo.array.MyArray;
+
+public class TestArray {
+
+	public static void main(String[] args) {
+		MyArray ma1 = new MyArray();
+		System.out.println("Capacity: "+ma1.getCapacity());
+		System.out.println("Size: "+ma1.getSize());
+		
+		MyArray ma2 = new MyArray(20);//size
+		System.out.println("Capacity: "+ma2.getCapacity());
+		System.out.println("Size: "+ma2.getSize());
+		
+		int newArr[] = new int[12];
+		newArr[0]=13;
+		newArr[1]=14;
+		newArr[2]=15;
+		newArr[3]=16;
+		newArr[4]=17;
+		newArr[5]=18;
+		newArr[6]=19;
+		
+
+		MyArray ma3 = new MyArray(newArr);
+		System.out.println("Capacity: "+ma3.getCapacity());
+		System.out.println("Size: "+ma3.getSize());
+		ma3.addAtEnd(20);
+		ma3.display();
+		System.out.println("-------------------------------------------");
+		ma3.addAtGivenPosition(3, 21);
+		ma3.display();
+		
+		ma3.searchByValue(21);
+		ma3.deleteByPosition(2);
+		System.out.println("-------------------------------------------");
+		ma3.display();
+		System.out.println("-------------------------------------------");
+		boolean status = ma3.deleteFirstOccur(19);
+		if (status) {
+			System.out.println("deleted successfully");
+		}else{
+			System.out.println("not deleted");
+		}
+		ma3.display();
+		
+		System.out.println("-------------------------------------------");
+		System.out.println("Rotation array");
+		ma3.rotateArray(true, 3);
+		ma3.display();
+		
+		System.out.println("-------------------------------------------");
+		System.out.println("Reverse array");
+		ma3.reverseArray(true);
+		ma3.display();
+		
+		System.out.println("-------------------------------------------");
+//		System.out.println("Reverse array");
+		ma3.exchangeIndexValue();
+		ma3.display();
+	}
+
+}

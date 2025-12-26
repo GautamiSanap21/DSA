@@ -1,0 +1,12 @@
+package com.demo.test;
+
+import com.demo.list.DoublyCircularLinkedList;
+
+public class TestDoublyCircularLinkedList {
+
+	public static void main(String[] args) {
+		DoublyCircularLinkedList dcll = new DoublyCircularLinkedList();
+
+	}
+
+}

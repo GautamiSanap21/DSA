@@ -1,0 +1,12 @@
+package com.demo.array;
+
+public class OneDArray {
+	int arr[];
+
+	public OneDArray(int[] arr) {
+		this.arr = arr;
+	}
+	
+	
+	
+}

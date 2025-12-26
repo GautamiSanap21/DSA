@@ -1,0 +1,22 @@
+package com.demo.test;
+import java.util.Iterator;
+import java.util.stream.IntStream;
+
+import com.demo.sorting.BubbleSortTechnique;
+
+public class TestBubbleSort {
+
+	public static void main(String[] args) {
+		BubbleSortTechnique b1 = new BubbleSortTechnique();
+//		int arr[] = {23,34,1,7,45,7,56,9};
+//		int arr[] = {100,35,7,23,76,89,5,43,3};
+//		int arr[] = {53,10,12,7,55,10,20};
+		int arr[] = {11,23,5,78,54,6,89,54,45};
+		b1.BubbleSort(arr);
+//		IntStream.of(arr).forEach(e->System.out.print(e+"\t"));
+		
+//		b1.ImprovedBubbleSort(arr);
+
+	}
+
+}

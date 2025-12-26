@@ -1,0 +1,20 @@
+package com.demo.stacks;
+
+public class MyQueueList {
+
+	public void enQueue(int start) {
+		
+		
+	}
+
+	public boolean isEmpty() {
+		
+		return false;
+	}
+
+	public int deQueue() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

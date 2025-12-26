@@ -1,0 +1,24 @@
+package com.demo.sort;
+
+public class MergeSort {
+	public static void mergeSort(int arr[], int start, int end) {
+		if (start<end) {
+			int mid = (start+end)/2;
+			
+			mergeSort(arr,start,mid);
+			mergeSort(arr,mid+1,end);
+			mergeSort(arr,start,mid,end);
+			
+		} else {
+
+		}
+	}
+
+	private static void mergeSort(int[] arr, int start, int mid, int end) {
+		int n1 = mid-start+1;
+		int n2 = end-mid;
+		int leftarray[] = new int[n1];
+		int rightarray[] = new int[n2];
+		
+	}
+}
